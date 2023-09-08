@@ -19,7 +19,7 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($groups as $group): ?>
+                <?php foreach ($groups as $group) : ?>
                 <tr>
                     <td><?= $this->Number->format($group->id) ?></td>
                     <td><?= h($group->name) ?></td>

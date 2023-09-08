@@ -23,7 +23,7 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($files as $file): ?>
+                <?php foreach ($files as $file) : ?>
                 <tr>
                     <td><?= $this->Number->format($file->id) ?></td>
                     <td><?= $file->has('group') ? $this->Html->link($file->group->name, ['controller' => 'Groups', 'action' => 'view', $file->group->id]) : '' ?></td>
