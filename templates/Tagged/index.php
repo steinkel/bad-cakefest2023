@@ -21,12 +21,12 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($tagged as $tagged) : ?>
+                <?php foreach ($tagged as $tagged): ?>
                 <tr>
                     <td><?= $this->Number->format($tagged->id) ?></td>
                     <td><?= h($tagged->table_alias) ?></td>
                     <td><?= $this->Number->format($tagged->foreign_key) ?></td>
-                    <td><?= $tagged->has('tag') ? $this->Html->link($tagged->tag->name, ['controller' => 'Tags', 'action' => 'view', $tagged->tag->id]) : '' ?></td>
+                    <td><?= $tagged->hasValue('tag') ? $this->Html->link($tagged->tag->name, ['controller' => 'Tags', 'action' => 'view', $tagged->tag->id]) : '' ?></td>
                     <td><?= h($tagged->created) ?></td>
                     <td><?= h($tagged->modified) ?></td>
                     <td class="actions">

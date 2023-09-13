@@ -24,7 +24,7 @@
                 </tr>
                 <tr>
                     <th><?= __('Tag') ?></th>
-                    <td><?= $tagged->has('tag') ? $this->Html->link($tagged->tag->name, ['controller' => 'Tags', 'action' => 'view', $tagged->tag->id]) : '' ?></td>
+                    <td><?= $tagged->hasValue('tag') ? $this->Html->link($tagged->tag->name, ['controller' => 'Tags', 'action' => 'view', $tagged->tag->id]) : '' ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Id') ?></th>

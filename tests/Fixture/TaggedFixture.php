@@ -29,8 +29,8 @@ class TaggedFixture extends TestFixture
                 'table_alias' => 'Lorem ipsum dolor sit amet',
                 'foreign_key' => 1,
                 'tag_id' => 1,
-                'created' => 1692784325,
-                'modified' => 1692784325,
+                'created' => 1694588311,
+                'modified' => 1694588311,
             ],
         ];
         parent::init();

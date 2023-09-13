@@ -20,11 +20,11 @@
             <table>
                 <tr>
                     <th><?= __('Group') ?></th>
-                    <td><?= $groupsUser->has('group') ? $this->Html->link($groupsUser->group->name, ['controller' => 'Groups', 'action' => 'view', $groupsUser->group->id]) : '' ?></td>
+                    <td><?= $groupsUser->hasValue('group') ? $this->Html->link($groupsUser->group->name, ['controller' => 'Groups', 'action' => 'view', $groupsUser->group->id]) : '' ?></td>
                 </tr>
                 <tr>
                     <th><?= __('User') ?></th>
-                    <td><?= $groupsUser->has('user') ? $this->Html->link($groupsUser->user->id, ['controller' => 'Users', 'action' => 'view', $groupsUser->user->id]) : '' ?></td>
+                    <td><?= $groupsUser->hasValue('user') ? $this->Html->link($groupsUser->user->id, ['controller' => 'Users', 'action' => 'view', $groupsUser->user->id]) : '' ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Role') ?></th>

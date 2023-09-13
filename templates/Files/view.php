@@ -20,7 +20,7 @@
             <table>
                 <tr>
                     <th><?= __('Group') ?></th>
-                    <td><?= $file->has('group') ? $this->Html->link($file->group->name, ['controller' => 'Groups', 'action' => 'view', $file->group->id]) : '' ?></td>
+                    <td><?= $file->hasValue('group') ? $this->Html->link($file->group->name, ['controller' => 'Groups', 'action' => 'view', $file->group->id]) : '' ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Name') ?></th>

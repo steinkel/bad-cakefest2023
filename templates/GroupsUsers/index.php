@@ -19,11 +19,11 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($groupsUsers as $groupsUser) : ?>
+                <?php foreach ($groupsUsers as $groupsUser): ?>
                 <tr>
                     <td><?= $this->Number->format($groupsUser->id) ?></td>
-                    <td><?= $groupsUser->has('group') ? $this->Html->link($groupsUser->group->name, ['controller' => 'Groups', 'action' => 'view', $groupsUser->group->id]) : '' ?></td>
-                    <td><?= $groupsUser->has('user') ? $this->Html->link($groupsUser->user->id, ['controller' => 'Users', 'action' => 'view', $groupsUser->user->id]) : '' ?></td>
+                    <td><?= $groupsUser->hasValue('group') ? $this->Html->link($groupsUser->group->name, ['controller' => 'Groups', 'action' => 'view', $groupsUser->group->id]) : '' ?></td>
+                    <td><?= $groupsUser->hasValue('user') ? $this->Html->link($groupsUser->user->id, ['controller' => 'Users', 'action' => 'view', $groupsUser->user->id]) : '' ?></td>
                     <td><?= h($groupsUser->role) ?></td>
                     <td class="actions">
                         <?= $this->Html->link(__('View'), ['action' => 'view', $groupsUser->id]) ?>
