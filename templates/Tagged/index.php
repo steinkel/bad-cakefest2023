@@ -21,7 +21,7 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($tagged as $tagged): ?>
+                <?php foreach ($tagged as $tagged) : ?>
                 <tr>
                     <td><?= $this->Number->format($tagged->id) ?></td>
                     <td><?= h($tagged->table_alias) ?></td>

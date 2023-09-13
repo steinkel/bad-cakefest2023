@@ -19,7 +19,7 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($groupsUsers as $groupsUser): ?>
+                <?php foreach ($groupsUsers as $groupsUser) : ?>
                 <tr>
                     <td><?= $this->Number->format($groupsUser->id) ?></td>
                     <td><?= $groupsUser->hasValue('group') ? $this->Html->link($groupsUser->group->name, ['controller' => 'Groups', 'action' => 'view', $groupsUser->group->id]) : '' ?></td>
