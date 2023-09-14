@@ -113,6 +113,15 @@ class UsersController extends AppController
 
     public function login()
     {
-        dd('to be continued...');
+        $result = $this->Authentication->getResult();
+        if ($result->isValid()) {
+            return $this->redirect(
+                $this->Authentication->getLoginRedirect() ?? '/'
+            );
+        }
+        // $result is NOT valid
+        if ($this->request->is('post')) {
+            $this->Flash->error('Invalid username or password');
+        }
     }
 }
