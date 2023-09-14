@@ -130,6 +130,7 @@ class UsersController extends AppController
     public function logout()
     {
         $this->Authentication->logout();
+
         return $this->redirect(Router::pathUrl('Users::login'));
     }
 }
