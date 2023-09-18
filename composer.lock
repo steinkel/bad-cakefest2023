@@ -2034,26 +2034,26 @@
     "packages-dev": [
         {
             "name": "brick/varexporter",
-            "version": "0.3.8",
+            "version": "0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brick/varexporter.git",
-                "reference": "b5853edea6204ff8fa10633c3a4cccc4058410ed"
+                "reference": "2fd038f7c9d12d468130c6e1b3ce06e4160a7dbb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brick/varexporter/zipball/b5853edea6204ff8fa10633c3a4cccc4058410ed",
-                "reference": "b5853edea6204ff8fa10633c3a4cccc4058410ed",
+                "url": "https://api.github.com/repos/brick/varexporter/zipball/2fd038f7c9d12d468130c6e1b3ce06e4160a7dbb",
+                "reference": "2fd038f7c9d12d468130c6e1b3ce06e4160a7dbb",
                 "shasum": ""
             },
             "require": {
                 "nikic/php-parser": "^4.0",
-                "php": "^7.2 || ^8.0"
+                "php": "^7.4 || ^8.0"
             },
             "require-dev": {
                 "php-coveralls/php-coveralls": "^2.2",
                 "phpunit/phpunit": "^8.5 || ^9.0",
-                "vimeo/psalm": "4.23.0"
+                "vimeo/psalm": "5.15.0"
             },
             "type": "library",
             "autoload": {
@@ -2071,7 +2071,7 @@
             ],
             "support": {
                 "issues": "https://github.com/brick/varexporter/issues",
-                "source": "https://github.com/brick/varexporter/tree/0.3.8"
+                "source": "https://github.com/brick/varexporter/tree/0.4.0"
             },
             "funding": [
                 {
@@ -2079,24 +2079,24 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-01-21T23:05:38+00:00"
+            "time": "2023-09-01T21:10:07+00:00"
         },
         {
             "name": "cakephp/bake",
-            "version": "3.0.1",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/bake.git",
-                "reference": "16f5e0d3cefbf7237d7d085a3def21de805eb030"
+                "reference": "d0dd499d199b6e0c0adfede2267b6ab8c0589a7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/bake/zipball/16f5e0d3cefbf7237d7d085a3def21de805eb030",
-                "reference": "16f5e0d3cefbf7237d7d085a3def21de805eb030",
+                "url": "https://api.github.com/repos/cakephp/bake/zipball/d0dd499d199b6e0c0adfede2267b6ab8c0589a7d",
+                "reference": "d0dd499d199b6e0c0adfede2267b6ab8c0589a7d",
                 "shasum": ""
             },
             "require": {
-                "brick/varexporter": "^0.3.5",
+                "brick/varexporter": "^0.4.0",
                 "cakephp/cakephp": "^5.0.0",
                 "cakephp/twig-view": "^2.0.0",
                 "nikic/php-parser": "^4.13.2"
@@ -2104,7 +2104,6 @@
             "require-dev": {
                 "cakephp/cakephp-codesniffer": "^5.0.0",
                 "cakephp/debug_kit": "^5.0.0",
-                "cakephp/plugin-installer": "^1.3",
                 "phpunit/phpunit": "^10.1.0"
             },
             "type": "cakephp-plugin",
@@ -2135,7 +2134,7 @@
                 "issues": "https://github.com/cakephp/bake/issues",
                 "source": "https://github.com/cakephp/bake"
             },
-            "time": "2023-09-10T03:30:08+00:00"
+            "time": "2023-09-17T19:41:49+00:00"
         },
         {
             "name": "cakephp/cakephp-codesniffer",
